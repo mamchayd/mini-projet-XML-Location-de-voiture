@@ -1,0 +1,12 @@
+
+
+
+<!ELEMENT loues (loue+) >
+<!ELEMENT loue (date_debut,date_fin,montantTotal) >
+<!ELEMENT date_debut (#PCDATA)>
+<!ELEMENT date_fin (#PCDATA)>
+<!ELEMENT montantTotal (#PCDATA)>
+<!ATTLIST loue idloue ID #REQUIRED >
+<!ATTLIST loue CIN IDREF #REQUIRED >
+<!ATTLIST loue idVehicul IDREF #REQUIRED>
+

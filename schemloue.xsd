@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	
+
+	<xs:element name="loues">
+
+		<xs:complexType>
+
+			<xs:sequence >
+
+				<xs:element ref="loue" maxOccurs="unbounded">
+</xs:element>
+
+			</xs:sequence>
+
+		</xs:complexType>
+
+	</xs:element>
+	
+	<xs:element name="loue">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="date_debut"/>
+				<xs:element ref="date_fin"/>
+				<xs:element ref="montantTotal"/>
+			</xs:sequence>
+			<xs:attribute name="CIN" type="xs:IDREF" use="required"/>
+			<xs:attribute name="idVehicul" type="xs:IDREF" use="required"/>
+			<xs:attribute name="idloue" type="xs:ID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	
+<xs:simpleType name="montantTotal">
+	
+	<xs:restriction base="xs:string">
+	
+	<xs:pattern value="[1-9]+"></xs:pattern>
+	
+	</xs:restriction>
+	
+</xs:simpleType>
+	
+<xs:element name="montantTotal" type="montantTotal"/>
+	<xs:element name="date_debut" type="xs:string"/>
+	<xs:element name="date_fin" type="xs:string"/>
+</xs:schema>

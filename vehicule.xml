@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Mon Nov 14 14:46:27 WET 2016 -->
+
+<!DOCTYPE vehiculs SYSTEM "dtdvehicul.dtd">
+<vehiculs>
+		<vehicul idVehicul="v1">
+
+			<marque>dacia</marque>
+			<immatriculation>59876-a-25647</immatriculation>
+			<couleur>blanc</couleur>
+			<nombrePlace>5</nombrePlace>
+		</vehicul>
+		
+		<vehicul idVehicul="v2">
+
+			<marque>peugeot</marque>
+			<immatriculation>56497-a-85694</immatriculation>
+			<couleur>noir</couleur>
+			<nombrePlace>6</nombrePlace>
+
+		</vehicul>
+		
+</vehiculs>

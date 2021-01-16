@@ -1,0 +1,12 @@
+<!-- DTD created at Mon Nov 14 14:50:26 WET 2016 with EditiX XML Editor (http://www.editix.com). Please insert an encoding attribute header for converting any DTD  -->
+
+<!ELEMENT clients (client+)>
+<!ELEMENT client (nom,prenom,adresse,codePostal,ville,date_permis_conduire)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT adresse (#PCDATA)>
+<!ELEMENT codePostal (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT date_permis_conduire (#PCDATA)>
+<!ATTLIST client CIN ID #REQUIRED>
+

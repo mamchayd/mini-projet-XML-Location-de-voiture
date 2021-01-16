@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="vehiculs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="vehicul" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="vehicul">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="marque"/>
+				<xs:element ref="immatriculation"/>
+				<xs:element ref="couleur"/>
+				<xs:element ref="nombrePlace"/>
+			</xs:sequence>
+			<xs:attribute name="idVehicul" type="xs:ID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	
+<xs:simpleType name="nombrePlace">
+	<xs:restriction base="xs:decimal">
+		<xs:maxInclusive value="7"></xs:maxInclusive>
+		<xs:minInclusive value="5"></xs:minInclusive>
+	</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="nombrePlace" type="nombrePlace"/>
+	<xs:element name="couleur" type="xs:string"/>
+	<xs:element name="immatriculation" type="xs:string"/>
+	<xs:element name="marque" type="xs:string"/>
+</xs:schema>

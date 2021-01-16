@@ -1,0 +1,11 @@
+<!-- DTD created at Mon Nov 14 15:31:00 WET 2016 with EditiX XML Editor (http://www.editix.com). Please insert an encoding attribute header for converting any DTD  -->
+
+
+
+<!ELEMENT  vehiculs (vehicul+)>
+<!ELEMENT vehicul (marque,immatriculation,couleur,nombrePlace)>
+<!ELEMENT  marque (#PCDATA)>
+<!ELEMENT  immatriculation (#PCDATA)>
+<!ELEMENT  couleur (#PCDATA)>
+<!ELEMENT  nombrePlace (#PCDATA)>
+<!ATTLIST vehicul idVehicul ID #REQUIRED>

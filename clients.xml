@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Mon Nov 14 14:35:01 WET 2016 -->
+
+<!DOCTYPE clients SYSTEM "dtdclient.dtd">
+
+<clients xsi:noNamespaceSchemaLocation="shemaclient.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<client CIN="A152368">
+
+		<nom>AGGAGUI</nom>
+
+		<prenom>Yassine</prenom>
+
+		<adresse>adresse1</adresse>
+
+		<ville>Kenitra</ville>
+		
+		<codePostal>11111</codePostal>
+
+		<date_permis_conduire>08/05/2016</date_permis_conduire>
+
+	</client>
+
+	
+
+	<client CIN="Z126598">
+
+		<nom>AMCHAYD</nom>
+
+		<prenom>Maryame</prenom>
+
+		<adresse>adresse2</adresse>
+
+		<ville>Meknes</ville>
+		
+		<codePostal>22222</codePostal>
+
+		<date_permis_conduire>01/12/2016</date_permis_conduire>
+
+	</client>
+
+
+</clients>

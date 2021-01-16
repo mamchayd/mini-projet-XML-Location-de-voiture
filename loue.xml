@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Mon Nov 14 14:41:49 WET 2016 -->
+
+<!DOCTYPE loues SYSTEM "dtdloue.dtd">
+<loues>
+
+	
+
+	<loue idloue="l1" idVehicul="v2" CIN="A152368">
+
+	
+
+		<date_debut>23/08/2014</date_debut>
+		<date_fin>25/08/2016</date_fin>
+		<montantTotal>2500DH</montantTotal>
+		
+
+	</loue>
+		
+</loues>

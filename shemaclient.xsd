@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XSD document created with EditiX XML Editor (http://www.editix.com) at Mon Nov 14 16:07:06 WET 2016 -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="clients">
+
+		<xs:complexType>
+
+			<xs:sequence >
+
+				<xs:element ref="client" maxOccurs="unbounded">
+</xs:element>
+
+			</xs:sequence>
+
+		</xs:complexType>
+
+	</xs:element>
+
+<xs:simpleType name="CINType">
+	<xs:restriction base="xs:ID">
+		<xs:pattern value="[A-Z][1-9]+"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="codePostaleType">
+	<xs:restriction base="xs:unsignedInt">
+		<xs:totalDigits  value="5"></xs:totalDigits>
+	</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="nom">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[A-Z]+"/>
+	</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="prenom">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[A-Z][a-z]+"/>
+	</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="ville">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[A-Z][a-z]+"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+
+<xs:element name="nom" type="nom"/>
+
+<xs:element name="prenom" type="prenom"/>
+
+<xs:element name="ville" type="ville"/>
+
+<xs:element name="adresse" type="xs:string"/>
+
+<xs:element name="date_permis_conduire" type="xs:string"/>
+
+<xs:element name="codePostal" type="codePostaleType"/>
+
+
+<xs:element name="client">
+	<xs:complexType>
+		<xs:sequence>
+				
+				<xs:element ref="nom" />
+	
+				<xs:element ref="prenom" />
+				
+				<xs:element ref="adresse" />
+				
+				<xs:element ref="ville" />
+				
+				<xs:element ref="codePostal" />
+				
+				<xs:element ref="date_permis_conduire" />
+				
+		</xs:sequence>
+		
+		<xs:attribute name="CIN" type="CINType"/>
+		
+	</xs:complexType>
+
+</xs:element>
+
+</xs:schema>
